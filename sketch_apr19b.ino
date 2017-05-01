@@ -13,8 +13,8 @@ myalt.alarm();
 
 void loop() {
 current_height = myalt.getHeightAvg (20); //takes the average of 20 heights to get current height
-Serial.print("Current Height: ");
-Serial.println(current_height);
+Serial.print("Current Height: "+current_height+"");
+//Serial.println(current_height);
 
 if (current_height > drop_height){
   myalt.alarm(6,2000,500);
